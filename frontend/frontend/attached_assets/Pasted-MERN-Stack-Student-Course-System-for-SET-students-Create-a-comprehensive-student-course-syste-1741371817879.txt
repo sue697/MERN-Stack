@@ -1,0 +1,52 @@
+MERN Stack - Student/Course System (for SET students)
+
+Create a comprehensive student/course system using the MERN stack. Develop an Express REST API to expose CRUD functionalities for managing student and course information. Implement a React front-end to allow students to interact with the system and an admin user to manage student records.
+Requirements:
+1.	Express REST API:
+•	Implement CRUD functionalities for managing student and course information.
+o	Create a student model with the following fields:
+	Student number
+	Password
+	First name
+	Last name
+	Address
+	City
+	Phone number
+	Email
+	Program
+	Add two additional custom fields for student-specific information, for example: favorite topic, favorite assignment, strongest technical skill obtained in this course, etc.
+o	Create a course model with the following fields:
+	Course code
+	Course name
+	Section
+	Semester
+	Students. This field can be defined as: students: [{  type: Schema.Types.ObjectId,    ref: 'Student'  }]
+Store the information in a MongoDB database. You may use the ref feature to establish references between student and course documents.
+Implement authentication/authorization capabilities using JWT and HTTPOnly cookies.
+
+2.	React Front-end:
+o	Develop a user-friendly UI using functional components, composition, and React Hooks. 
+o	Provide a login functionality for students.
+o	Implement the following features for students:
+o	Add a course
+o	Update a course (e.g., change section)
+o	Drop a course
+o	List all courses taken by a student
+o	Implement the following features for admin user:
+o	Add a student
+o	List all students
+o	List all courses
+o	List all students taking a specific course
+3.	MVC Architecture:
+Apply the MVC (Model-View-Controller) principles for the Express API to ensure a structured and maintainable codebase.
+Design a nice and friendly UI.
+ (10 marks)
+Evaluation: 
+Functionality(including code explanation):	
+React front-end (Correct components, forms, event handling, login)	30%
+MongoDB database (config files, models)	10%
+Express Rest API (Correct models, controllers, routes code,  Correct implementation of MVC architecture, authentication/authorization, Correct server.js, express.js, mongoose.js and config.js files)	30%
+Friendliness (using CSS to align the React elements, React-Bootstrap, etc.)	10%
+Innovative features (extensive use of ES6+ syntax, UI design, etc.)	10%
+In class Code demonstration with explanation	10%
+Total	100%
